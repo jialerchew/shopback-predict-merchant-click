@@ -1,0 +1,56 @@
+paid_ins_organic
+Paid Search
+Display
+Direct
+Extension
+Organic Search
+paid_ins_googleadwords_int
+Newsletter
+Referral
+Social
+paid_ins_af_banner
+paid_rtg_criteonew_int
+(Other)
+paid_ins_restricted
+paid_ins_Facebook Ads
+paid_rtg_googleadwords_int
+paid_rtg_Facebook Ads
+paid_ins_partnerships
+paid_ins_Apple Search Ads
+paid_ins_admax_int
+paid_ins_gnmperformanckr
+paid_ins_naver
+paid_ins_daum
+Mobile App
+paid_rtg_restricted
+paid_ins_mapp
+paid_ins_crm
+paid_rtg_kakao_int
+paid_ins_forum
+(No value)
+paid_ins_kakaotalk
+paid_ins_facebook
+Email
+paid_ins_alilinkchecker
+paid_ins_kakaomoment
+paid_ins_kakao
+paid_ins_naverbranding
+paid_ins_KR_CRM
+paid_ins_adpick_int
+paid_ins_navergfa
+paid_ins_mfaas_int
+paid_ins_aliexpress328sale
+paid_ins_crosstarget_int
+paid_ins_naverGFA_int
+Paid Social
+paid_ins_carouselbanner
+paid_ins_bytedanceglobal_int
+paid_ins_raf
+paid_ins_ebates
+paid_ins_navbar
+paid_ins_homepage
+paid_ins_naverwebtoon
+paid_ins_kakao_int
+paid_rtg_inmobi_int
+paid_ins_ian
+paid_ins_kevin_test

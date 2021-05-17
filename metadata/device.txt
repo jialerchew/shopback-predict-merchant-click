@@ -1,0 +1,9 @@
+app_android
+desktop
+mobile_ios
+extension
+app_ios
+mobile_android
+(No value)
+mobile
+tablet

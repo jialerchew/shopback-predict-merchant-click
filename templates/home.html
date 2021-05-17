@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Merchant Click v1.0</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Merchant Click</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+        Device used:
+        <select name="device">
+            {% for x in device %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        Platform:
+        <select name="platform">
+            {% for x in platform %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        Channel:
+        <select name="channel">
+            {% for x in channel %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        <input type="text" name="created_hour" placeholder="Time clicked (hour integer: 0 to 23)" required="required" /><br>
+        Day of click:
+        <select name="created_dayofweek">
+            {% for x in created_dayofweek %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        Is this user's first click?
+        <select name="first_click_in_2021">
+            {% for x in first_click_in_2021 %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        <input type="text" name="time_diff_since_last_click_current_year_in_minutes" placeholder="Minutes passed since last click" required="required" /><br>
+        Merchant ID of user's first purchase
+        <select name="lifetime_first_merchant_id">
+            {% for x in lifetime_first_merchant_id %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        How did user join Shopback South Korea?
+        <select name="account_referral">
+            {% for x in account_referral %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        <input type="text" name="click_count" placeholder="Lifetime click count" required="required" /><br>
+        <input type="text" name="average_weekly_click_count" placeholder="Average weekly click count" required="required" /><br>
+        Merchant ID of most clicked merchant by user
+        <select name="most_clicked_merchant_id">
+            {% for x in most_clicked_merchant_id %}
+            <option value= "{{x}}" SELECTED>{{x}}</option>"
+            {% endfor %}
+        </select>
+        <input type="text" name="click_count_most_clicked_merchant_id" placeholder="Click count on most frequently clicked merchant" required="required" /><br>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>
