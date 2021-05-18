@@ -78,4 +78,4 @@ Please refer to `requirements.txt`. Python version used is 3.9.4.
 * **All values need to be in string format, including numerics.**
 * Predictions are returned as an additional key in the original JSON list.
 * Refer to `Sample batch predict.ipynb` notebook for a simple example of using endpoint.
-* Try not to intentionally break the web service as it is not test vigorously to support all data types.
+* Try not to intentionally break the web service as it is not tested vigorously to support all data types.
